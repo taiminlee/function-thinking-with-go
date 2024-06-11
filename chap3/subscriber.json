@@ -1,0 +1,26 @@
+[
+  {
+    "email": "john@coldmail.com",
+    "rec_count": 2
+  },
+  {
+    "email": "sam@coldmail.com",
+    "rec_count": 16
+  },
+  {
+    "email": "jan@coldmail.com",
+    "rec_count": 0
+  },
+  {
+    "email": "max@coldmail.com",
+    "rec_count": 12
+  },
+  {
+    "email": "sync@coldmail.com",
+    "rec_count": 28
+  },
+  {
+    "email": "bob@coldmail.com",
+    "rec_count": 6
+  }
+]
