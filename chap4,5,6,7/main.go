@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Cart struct {
 	name  string
 	price float32
@@ -25,8 +27,28 @@ func calcCartTotal(shoppingCart []Cart) float32 {
 	return total
 }
 
-func update_shipping_icons() {
+func updateShippingIcons() {
+	var carts []Cart = listBuyItem()
+	for _, cart := range carts {
+		if shoppingCartTotal+cart.price >= 20 {
+			fmt.Println("Show the free shipping")
+		} else {
+			fmt.Println("Do not free ship!")
+		}
+	}
+}
 
+func listBuyItem() []Cart {
+	return []Cart{
+		{
+			name:  "hot",
+			price: 55,
+		},
+		{
+			name:  "cold",
+			price: 44,
+		},
+	}
 }
 
 func main() {
